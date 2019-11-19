@@ -18,4 +18,6 @@ cd patches
 call apply_patches_with_revert.bat
 popd
 
-:quit
+:quit?nothing to do here  
+? 
+?this line: nothing to do here too  
