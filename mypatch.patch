@@ -1,0 +1,15 @@
+diff --git a/sources/Utils.cpp b/sources/Utils.cpp
+index 13a00b9..df29257 100644
+--- a/sources/Utils.cpp
++++ b/sources/Utils.cpp
+@@ -39,4 +39,7 @@ int Utils::Random(int min, int max)
+ {
+ 	int random = rand() % (max - min + 1) + min;
+ 	return random;
+-}
+\ No newline at end of file
++}
++int​ Add(​int​ a, ​int​ b) {     ​
++	return​ a + b; 
++} 
+\ No newline at end of file
