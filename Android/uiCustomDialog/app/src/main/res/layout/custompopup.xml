@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/textView_quit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/circlequit"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/whiteText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_quit"
+        app:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Chris Hemsworth "
+        android:textColor="@color/whiteText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_avatar" />
+
+    <TextView
+        android:id="@+id/textView_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Byron Bay, Australia"
+        android:textColor="@color/whiteText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_address">
+
+        <TextView
+            android:id="@+id/textView_followNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="150"
+            android:textColor="@color/whiteText"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_conversion_absoluteWidth="117dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="247dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Followers"
+            android:textColor="@color/whiteText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/bluelight"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView_address">
+
+        <TextView
+            android:id="@+id/textView_cityNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="19"
+            android:textColor="@color/whiteText"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_conversion_absoluteWidth="117dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="247dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="Cities"
+            android:textColor="@color/whiteText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_address">
+
+        <TextView
+            android:id="@+id/textView_postNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="@color/whiteText"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_conversion_absoluteWidth="117dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="247dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="Posts"
+            android:textColor="@color/whiteText" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_style"
+        android:text="Follow me"
+        android:textColor="@color/whiteText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Random Number</string>
+    <string name="hello_first_fragment">0</string>
+    <string name="button">Button</string>
+    <string name="Toast_button_text">Toast</string>
+    <string name="Random_button_text">next</string>
+    <string name="count_button_text">Count</string>
+    <string name="textview_random_number">R</string>
+    <string name="Button_previous">Previous</string>
+    <string name="textview_header_message">Hello Second fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_random">activity_random</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
